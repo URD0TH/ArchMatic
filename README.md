@@ -10,11 +10,11 @@ This README contains the steps I do to install and configure a fully-functional 
 
 First, setup the boot USB, boot arch live iso, and run the `archmatic.sh` from terminal.
 
-Note: Still working on automated Intel systems and Gaming tweaks
+Note: Still working on automated Intel systems and Gaming tweaks , fork @ChrisTitusTech
 
 ```
 pacman -Sy git
-git clone https://github.com/ChrisTitusTech/ArchMatic
+git clone https://github.com/URD0TH/ArchMatic
 cd ArchMatic
 ./archmatic.sh
 ```
