@@ -45,14 +45,14 @@ sudo sed -i 's/COMPRESSXZ=(xz -c -z -)/COMPRESSXZ=(xz -c -T $nc -z -)/g' /etc/ma
 echo "-------------------------------------------------"
 echo "       Setup Language to US and set locale       "
 echo "-------------------------------------------------"
-sed -i 's/^#en_US.UTF-8 UTF-8/en_US.UTF-8 UTF-8/' /etc/locale.gen
+sed -i 's/^#es_ES.UTF-8 UTF-8/es_ES.UTF-8 UTF-8/' /etc/locale.gen
 locale-gen
-timedatectl --no-ask-password set-timezone America/Chicago
+timedatectl --no-ask-password set-timezone America/Santiago
 timedatectl --no-ask-password set-ntp 1
-localectl --no-ask-password set-locale LANG="en_US.UTF-8" LC_COLLATE="" LC_TIME="en_US.UTF-8"
+localectl --no-ask-password set-locale LANG="es_ES.UTF-8" LC_COLLATE="" LC_TIME="es_ES.UTF-8"
 
 # Set keymaps
-localectl --no-ask-password set-keymap us
+localectl --no-ask-password set-keymap es
 
 # Hostname
 hostnamectl --no-ask-password set-hostname $hostname
@@ -108,6 +108,8 @@ PKGS=(
 'efibootmgr' # EFI boot
 'exfat-utils'
 'flex'
+'firefox'
+'firefox-i18n-es-cl'
 'fuse2'
 'fuse3'
 'fuseiso'
@@ -219,6 +221,7 @@ PKGS=(
 'spectacle'
 'steam'
 'sudo'
+'Spotify'
 'swtpm'
 'synergy'
 'systemsettings'
@@ -231,6 +234,7 @@ PKGS=(
 'usbutils'
 'vde2'
 'vim'
+'VLC'
 'virt-manager'
 'virt-viewer'
 'wget'
