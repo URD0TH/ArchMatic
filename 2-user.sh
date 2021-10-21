@@ -27,6 +27,8 @@ PKGS=(
 'brave-bin' # Brave Browser
 'dxvk-bin' # DXVK DirectX to Vulcan
 'github-desktop-bin' # Github Desktop sync
+'lightly-qt'
+'aritim-dark-kde-git'
 'lightly-git'
 'lightlyshaders-git'
 'mangohud' # Gaming FPS Counter
