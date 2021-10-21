@@ -48,7 +48,8 @@ PKGS=(
 'ttf-meslo' # Nerdfont package
 'ttf-roboto'
 'zoom' # video conferences
-
+'firefox'
+'firefox-i18n-es-cl'
 )
 
 for PKG in "${PKGS[@]}"; do
