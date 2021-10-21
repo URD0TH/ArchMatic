@@ -56,7 +56,7 @@ PKGS=(
 for PKG in "${PKGS[@]}"; do
     yay -S --noconfirm $PKG
 done
-pacman -Syyu lightly-qt lightlyshaders-git --noconfirm
+#pacman -Syyu lightly-qt lightlyshaders-git --noconfirm
 
 cat <<EOF >> /home/$(whoami)/.config/mpv/mpv.conf
 vo=vdpau
@@ -69,12 +69,12 @@ interpolation
 tscale=oversample
 EOF
 
-export PATH=$PATH:~/.local/bin
-cp -r $HOME/ArchMatic/dotfiles/* $HOME/.config/
-pip install konsave
-konsave -i $HOME/ArchMatic/kde.knsv
-sleep 1
-konsave -a kde
+#export PATH=$PATH:~/.local/bin
+#cp -r $HOME/ArchMatic/dotfiles/* $HOME/.config/
+#pip install konsave
+#konsave -i $HOME/ArchMatic/kde.knsv
+#sleep 1
+#konsave -a kde
 
 echo -e "\nDone!\n"
 exit
