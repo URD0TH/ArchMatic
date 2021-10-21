@@ -27,10 +27,10 @@ PKGS=(
 'brave-bin' # Brave Browser
 'dxvk-bin' # DXVK DirectX to Vulcan
 'github-desktop-bin' # Github Desktop sync
-'lightly-qt'
+#'lightly-qt'
 'aritim-dark-kde-git'
-'lightly-git'
-'lightlyshaders-git'
+#'lightly-git'
+#'lightlyshaders-git'
 'mangohud' # Gaming FPS Counter
 'mangohud-common'
 'nerd-fonts-fira-code'
@@ -56,6 +56,7 @@ PKGS=(
 for PKG in "${PKGS[@]}"; do
     yay -S --noconfirm $PKG
 done
+pacman -Syyu lightly-qt lightlyshaders-git --noconfirm
 
 cat <<EOF >> /home/$(whoami)/.config/mpv/mpv.conf
 vo=vdpau
