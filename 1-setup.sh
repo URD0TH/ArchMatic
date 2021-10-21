@@ -224,7 +224,6 @@ PKGS=(
 'spectacle'
 'steam'
 'sudo'
-'Spotify'
 'swtpm'
 'synergy'
 'systemsettings'
