@@ -96,6 +96,11 @@ PKGS=(
 'code' # Visual Studio code
 'cronie'
 'cups'
+'cmake'
+'extra-cmake-modules'
+'kdecoration'
+'qt5-declarative'
+'qt5-x11extras'
 'dhcpcd'
 'dialog'
 'discover'
