@@ -50,6 +50,7 @@ PKGS=(
 'zoom' # video conferences
 'firefox'
 'firefox-i18n-es-cl'
+'spotify'
 )
 
 for PKG in "${PKGS[@]}"; do
