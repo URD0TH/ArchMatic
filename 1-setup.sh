@@ -113,8 +113,6 @@ PKGS=(
 'efibootmgr' # EFI boot
 'exfat-utils'
 'flex'
-'firefox'
-'firefox-i18n-es-cl'
 'fuse2'
 'fuse3'
 'fuseiso'
